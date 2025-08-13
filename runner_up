@@ -1,0 +1,12 @@
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    Max,secondMax=-101,-101
+    for x in arr:
+        if(x>Max):
+            secondMax=Max  
+            Max=x   
+        elif(x>secondMax and x<Max):
+            secondMax=x
+    print(secondMax)
